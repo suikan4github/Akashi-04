@@ -1,0 +1,3 @@
+[submodule "Suikan-KiCad-Libraries"]
+	path = Suikan-KiCad-Libraries
+	url = https://github.com/suikan4github/Suikan-KiCad-Libraries.git
