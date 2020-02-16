@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name Display_Modules)(type Legacy)(uri /home/takemasa/shared_foo/kicad/github/Suikan-KiCad-Libraries/Libraries/Display_Modules.lib)(options "")(descr "")(disabled))
-  (lib (name Akashi-01-rescue)(type Legacy)(uri ${KIPRJMOD}/Akashi-01-rescue.lib)(options "")(descr ""))
-  (lib (name Display_Modules_Local)(type Legacy)(uri Suikan-KiCad-Libraries/Libraries/Display_Modules.lib)(options "")(descr ""))
-)
