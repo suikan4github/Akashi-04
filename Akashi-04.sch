@@ -264,7 +264,6 @@ NoConn ~ 5500 3050
 NoConn ~ 5500 2950
 NoConn ~ 5500 2850
 NoConn ~ 5500 2750
-NoConn ~ 8600 2600
 NoConn ~ 9100 2600
 NoConn ~ 9100 2700
 NoConn ~ 9100 2800
@@ -305,7 +304,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 2450 6550 2600
 Wire Wire Line
-	8200 2700 8600 2700
+	8200 2700 8250 2700
 Wire Wire Line
 	9100 3300 9800 3300
 Text Label 9350 3300 0    40   ~ 0
@@ -356,8 +355,8 @@ $Comp
 L Connector_Generic:Conn_01x10 CN5
 U 1 1 5E4951B5
 P 8000 3200
-F 0 "CN5" H 7918 2475 50  0000 C CNN
-F 1 "Conn_01x10" H 7918 2566 50  0000 C CNN
+F 0 "CN5" H 8000 2500 50  0000 C CNN
+F 1 "Conn_01x10" H 8150 2600 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8000 3200 50  0001 C CNN
 F 3 "~" H 8000 3200 50  0001 C CNN
 	1    8000 3200
@@ -677,4 +676,13 @@ Text Label 3400 3500 0    40   ~ 0
 I2S3_WS
 NoConn ~ 5500 3550
 NoConn ~ 6000 3750
+Wire Wire Line
+	8600 2600 8250 2600
+Wire Wire Line
+	8250 2600 8250 2700
+Connection ~ 8250 2700
+Wire Wire Line
+	8250 2700 8600 2700
+Text Label 8250 2600 0    40   ~ 0
+I2C_RESCUE
 $EndSCHEMATC
