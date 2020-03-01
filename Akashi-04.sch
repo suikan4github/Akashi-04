@@ -674,7 +674,6 @@ Text Label 5150 2650 0    40   ~ 0
 I2S3_SD
 Text Label 3400 3500 0    40   ~ 0
 I2S3_WS
-NoConn ~ 5500 3550
 NoConn ~ 6000 3750
 Wire Wire Line
 	8600 2600 8250 2600
@@ -685,4 +684,11 @@ Wire Wire Line
 	8250 2700 8600 2700
 Text Label 8250 2600 0    40   ~ 0
 I2C_RESCUE
+Wire Wire Line
+	5500 3550 5000 3550
+Wire Wire Line
+	5000 3550 5000 3350
+Connection ~ 5000 3350
+Text Label 5100 3550 0    40   ~ 0
+WS_INT
 $EndSCHEMATC
