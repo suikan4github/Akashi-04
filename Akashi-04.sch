@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "AKASHI-01"
-Date "2019-11-04"
-Rev "v1.0.2"
+Title "AKASHI-04"
+Date "2020-03-01"
+Rev "v1.0.0"
 Comp ""
-Comment1 "Test jig for Nucleo 64"
+Comment1 "Audio board for Nucleo G431RB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -120,12 +120,12 @@ Wire Wire Line
 $Comp
 L Device:R R9
 U 1 1 5C988D65
-P 1300 2400
-F 0 "R9" H 1370 2446 50  0000 L CNN
-F 1 "2.2k" H 1370 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1230 2400 50  0001 C CNN
-F 3 "~" H 1300 2400 50  0001 C CNN
-	1    1300 2400
+P 1250 2400
+F 0 "R9" H 1320 2446 50  0000 L CNN
+F 1 "2.2k" H 1320 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1180 2400 50  0001 C CNN
+F 3 "~" H 1250 2400 50  0001 C CNN
+	1    1250 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -153,16 +153,16 @@ $EndComp
 $Comp
 L power:+3.3V #PWR012
 U 1 1 5C98C512
-P 1300 2100
-F 0 "#PWR012" H 1300 1950 50  0001 C CNN
-F 1 "+3.3V" H 1315 2273 50  0000 C CNN
-F 2 "" H 1300 2100 50  0001 C CNN
-F 3 "" H 1300 2100 50  0001 C CNN
-	1    1300 2100
+P 1250 2100
+F 0 "#PWR012" H 1250 1950 50  0001 C CNN
+F 1 "+3.3V" H 1265 2273 50  0000 C CNN
+F 2 "" H 1250 2100 50  0001 C CNN
+F 3 "" H 1250 2100 50  0001 C CNN
+	1    1250 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 2100 1300 2250
+	1250 2100 1250 2250
 Wire Wire Line
 	1550 2100 1550 2250
 $Comp
@@ -478,9 +478,9 @@ Wire Wire Line
 Wire Wire Line
 	1550 2550 1550 3200
 Wire Wire Line
-	1950 3300 1300 3300
+	1950 3300 1250 3300
 Wire Wire Line
-	1300 2550 1300 3300
+	1250 2550 1250 3300
 $Comp
 L power:+3.3V #PWR06
 U 1 1 5E4FE3B6
@@ -691,4 +691,8 @@ Wire Wire Line
 Connection ~ 5000 3350
 Text Label 5100 3550 0    40   ~ 0
 WS_INT
+Text Notes 6600 5000 0    40   ~ 0
+I2S2 : Slave TX\nI2S3 : Slave RX\nI2C_RESCUE : OD\nWS_INT : EXTI
+Text Notes 2100 5100 0    40   ~ 0
+For the default case, R3 can be removed.
 $EndSCHEMATC
