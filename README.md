@@ -45,19 +45,6 @@ If you want to change, you should modify the short bridge as following :
 | Open   | Open   | Closed | Closed | 0x3B    |
 
 
-J2-J5 as following :
-- J2 : Open by cutting the pattern.
-- J3 : Close by soldering.
-- J4 : Open by cutting the pattern.
-- J5 : Close by soldering.
-
-By above modification , the address can be controlled by GPIO PB12 and PA15. The address can be determined as following :
-
-| b6 | b5 | b4 | b3 | b2 | b1    | b0   |
------|----|----|----|----|-------|---- 
-| 0  | 1  | 1  | 1  | 0  | PB12  | PA15 |
-
-
 ## Usage
 To clone this project, follow :
 ```
