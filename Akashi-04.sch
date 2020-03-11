@@ -118,28 +118,6 @@ I2S2_CK
 Wire Wire Line
 	8200 2800 8600 2800
 $Comp
-L Device:R R9
-U 1 1 5C988D65
-P 1250 2400
-F 0 "R9" H 1320 2446 50  0000 L CNN
-F 1 "2.2k" H 1320 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1180 2400 50  0001 C CNN
-F 3 "~" H 1250 2400 50  0001 C CNN
-	1    1250 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5C989336
-P 1550 2400
-F 0 "R5" H 1620 2446 50  0000 L CNN
-F 1 "2.2k" H 1620 2355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 2400 50  0001 C CNN
-F 3 "~" H 1550 2400 50  0001 C CNN
-	1    1550 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR09
 U 1 1 5C98C2B3
 P 1550 2100
@@ -557,28 +535,6 @@ F 3 "~" H 3400 4000 50  0001 C CNN
 	1    3400 4000
 	0    1    1    0   
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5E5272BE
-P 3650 3700
-F 0 "JP3" H 3650 3813 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 3650 3814 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3650 3700 50  0001 C CNN
-F 3 "~" H 3650 3700 50  0001 C CNN
-	1    3650 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5E527B62
-P 3650 3800
-F 0 "JP4" H 3650 3700 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 3650 3914 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3650 3800 50  0001 C CNN
-F 3 "~" H 3650 3800 50  0001 C CNN
-	1    3650 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3100 3700 3200 3700
 Wire Wire Line
@@ -613,12 +569,8 @@ Wire Wire Line
 	3400 3850 3400 3800
 Connection ~ 3400 3800
 Wire Wire Line
-	3400 3800 3500 3800
-Wire Wire Line
 	3200 3850 3200 3700
 Connection ~ 3200 3700
-Wire Wire Line
-	3200 3700 3500 3700
 NoConn ~ 3100 3000
 NoConn ~ 3100 3100
 $Comp
@@ -648,25 +600,14 @@ Wire Wire Line
 Wire Wire Line
 	4000 3550 4000 3700
 Wire Wire Line
-	4000 3800 3800 3800
-Wire Wire Line
-	3800 3700 4000 3700
-Connection ~ 4000 3700
-Wire Wire Line
-	4000 3700 4000 3800
-Wire Wire Line
 	4850 5450 4850 5600
 Text Notes 2100 4950 0    40   ~ 0
 JP1\nClosed\nOpen\nClosed\nOpen
 Text Notes 2350 4950 0    40   ~ 0
 JP2\nClosed\nClosed\nOpen\nOpen
-Text Notes 2600 4950 0    40   ~ 0
-JP3\nOpen\nClosed\nOpen\nClosed
-Text Notes 2850 4950 0    40   ~ 0
-JP4\nOpen\nOpen\nClosed\nClosed\n
-Text Notes 3100 4950 0    40   ~ 0
+Text Notes 2650 4950 0    40   ~ 0
 Address\n0x38 – Default\n0x39\n0x3A\n0x3B
-Text Notes 2400 4550 0    40   ~ 0
+Text Notes 2250 4550 0    40   ~ 0
 Codec I2C Address
 Wire Wire Line
 	5500 2650 5150 2650
@@ -694,5 +635,61 @@ WS_INT
 Text Notes 6600 5000 0    40   ~ 0
 I2S2 : Slave TX\nI2S3 : Slave RX\nI2C_RESCUE : OD\nWS_INT : EXTI
 Text Notes 2100 5100 0    40   ~ 0
-For the default case, R3 can be removed.
+R3 and R4 must be installed only when JP1 and JP2 is cut, respectively
+Text Label 1600 3200 0    50   ~ 0
+I2C1_SDA
+Text Label 1600 3300 0    50   ~ 0
+I2C1_SCL
+$Comp
+L Device:R R6
+U 1 1 5C988D65
+P 1250 2400
+F 0 "R6" H 1320 2446 50  0000 L CNN
+F 1 "2.2k" H 1320 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1180 2400 50  0001 C CNN
+F 3 "~" H 1250 2400 50  0001 C CNN
+	1    1250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C989336
+P 1550 2400
+F 0 "R5" H 1620 2446 50  0000 L CNN
+F 1 "2.2k" H 1620 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1480 2400 50  0001 C CNN
+F 3 "~" H 1550 2400 50  0001 C CNN
+	1    1550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E69CA7E
+P 4300 3400
+F 0 "R4" H 4370 3446 50  0000 L CNN
+F 1 "4.7k" H 4370 3355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4230 3400 50  0001 C CNN
+F 3 "~" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 5E69CA88
+P 4300 3100
+F 0 "#PWR0101" H 4300 2950 50  0001 C CNN
+F 1 "+3.3V" H 4315 3273 50  0000 C CNN
+F 2 "" H 4300 3100 50  0001 C CNN
+F 3 "" H 4300 3100 50  0001 C CNN
+	1    4300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3100 4300 3250
+Wire Wire Line
+	4300 3550 4300 3800
+Wire Wire Line
+	3200 3700 4000 3700
+Wire Wire Line
+	3400 3800 4300 3800
 $EndSCHEMATC

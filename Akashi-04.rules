@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 268)
+    (start_pass_no 672)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -69,17 +69,17 @@
     )
   )
   (class "kicad_default"
-    GND /LED2 /LED1 "/I2C1_SDA" "/I2C1_SCL" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(CN7-Pad33)"
-    "Net-(CN7-Pad31)" "Net-(CN7-Pad29)" "Net-(CN7-Pad27)" "Net-(CN7-Pad26)" "Net-(CN7-Pad25)" "Net-(CN7-Pad23)" "Net-(CN7-Pad15)" "Net-(CN7-Pad13)"
-    "Net-(CN7-Pad11)" "Net-(CN7-Pad9)" "Net-(CN7-Pad7)" "Net-(CN7-Pad6)" "Net-(CN7-Pad5)" "Net-(CN7-Pad4)" "Net-(CN7-Pad2)" "Net-(CN10-Pad1)"
+    GND "Net-(CN10-Pad38)" /LED2 /LED1 "/I2C1_SDA" "/I2C1_SCL" "Net-(D1-Pad2)" "Net-(D2-Pad2)"
+    "Net-(CN7-Pad33)" "Net-(CN7-Pad31)" "Net-(CN7-Pad29)" "Net-(CN7-Pad27)" "Net-(CN7-Pad26)" "Net-(CN7-Pad25)" "Net-(CN7-Pad23)" "Net-(CN7-Pad15)"
+    "Net-(CN7-Pad13)" "Net-(CN7-Pad11)" "Net-(CN7-Pad9)" "Net-(CN7-Pad7)" "Net-(CN7-Pad6)" "Net-(CN7-Pad5)" "Net-(CN7-Pad4)" "Net-(CN7-Pad2)"
     "Net-(CN10-Pad2)" "Net-(CN10-Pad4)" "Net-(CN10-Pad6)" "Net-(CN10-Pad7)" "Net-(CN10-Pad8)" "Net-(CN10-Pad10)" "Net-(CN10-Pad17)" "Net-(CN10-Pad19)"
     "Net-(CN10-Pad22)" "Net-(CN10-Pad23)" "Net-(CN10-Pad24)" "Net-(CN10-Pad27)" "Net-(CN10-Pad29)" "Net-(CN10-Pad31)" "Net-(CN10-Pad32)" "Net-(CN10-Pad35)"
-    "Net-(CN10-Pad36)" "Net-(CN10-Pad37)" "Net-(CN10-Pad38)" "Net-(CN7-Pad34)" "Net-(CN7-Pad32)" "Net-(CN7-Pad30)" "Net-(CN7-Pad28)" "Net-(CN7-Pad21)"
-    "/I2S3_SD" "Net-(CN10-Pad11)" "Net-(CN10-Pad12)" "Net-(CN10-Pad13)" "Net-(CN10-Pad14)" "Net-(CN10-Pad15)" "/I2S2_WS" "Net-(CN10-Pad18)"
-    "Net-(CN10-Pad21)" "Net-(CN10-Pad25)" "/I2S2_SD" "Net-(CN10-Pad28)" "/I2S2_CK" "Net-(CN10-Pad33)" "Net-(CN10-Pad34)" "Net-(CN6-Pad8)"
-    "Net-(CN6-Pad5)" "Net-(CN6-Pad3)" "Net-(CN6-Pad2)" "Net-(CN6-Pad1)" "Net-(CN7-Pad38)" "Net-(CN7-Pad36)" "Net-(JP1-Pad1)" "Net-(JP2-Pad1)"
-    "Net-(JP3-Pad2)" "Net-(R5-Pad2)" "Net-(R9-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad4)" "Net-(U1-Pad15)" "Net-(U1-Pad16)" "Net-(U1-Pad17)"
-    "Net-(U1-Pad18)" "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U1-Pad21)" "Net-(U1-Pad22)" "Net-(U1-Pad23)" "Net-(U1-Pad24)"
+    "Net-(CN10-Pad36)" "Net-(CN10-Pad37)" "Net-(CN7-Pad34)" "Net-(CN7-Pad32)" "Net-(CN7-Pad30)" "Net-(CN7-Pad28)" "/I2S3_SD" "Net-(CN10-Pad11)"
+    "Net-(CN10-Pad12)" "Net-(CN10-Pad13)" "Net-(CN10-Pad14)" "Net-(CN10-Pad15)" "/I2S2_WS" "Net-(CN10-Pad18)" "Net-(CN10-Pad21)" "Net-(CN10-Pad25)"
+    "/I2S2_SD" "Net-(CN10-Pad28)" "/I2S2_CK" "Net-(CN10-Pad33)" "Net-(CN10-Pad34)" "Net-(CN6-Pad8)" "Net-(CN6-Pad5)" "Net-(CN6-Pad3)"
+    "Net-(CN6-Pad2)" "Net-(CN6-Pad1)" "Net-(CN7-Pad38)" "Net-(CN7-Pad36)" "Net-(JP1-Pad1)" "Net-(JP2-Pad1)" "Net-(U1-Pad3)" "Net-(U1-Pad4)"
+    "Net-(U1-Pad15)" "Net-(U1-Pad16)" "Net-(U1-Pad17)" "Net-(U1-Pad18)" "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U1-Pad21)" "Net-(U1-Pad22)"
+    "Net-(U1-Pad23)" "Net-(U1-Pad24)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

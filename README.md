@@ -4,7 +4,7 @@ Audio board for Nucleo-G431RB
 ## Functionality
 This board is designed to provide the audio functionality for the  STM32 series MCU. 
 The connectors can be directly mounted on the Nucleo 64 series board and employs I2S interface of STM32 MCU.
-With this board, the following audio interface can be tested :
+This board supports following Nucleo :
 - STM32F446RE
 - STM32G431RB
 
@@ -34,16 +34,17 @@ The configuration of special ports are :
 
 
 ## I2C address
-By default, the I2C device address are fixed as ***0x38*** ( 7bit address ). 
+By default, the I2C device address are configured as ***0x38*** ( 7bit address ). 
 If you want to change, you should modify the short bridge as following : 
 
-| JP1    | JP2    | JP3    | JP4    | Address |
----------|--------|--------|--------|---------|
-| Closed | Closed | Open   | Open   | 0x38    |
-| Open   | Closed | Close  | Open   | 0x39    |
-| Closed | Open   | Open   | Closed | 0x3A    |
-| Open   | Open   | Closed | Closed | 0x3B    |
+| JP1    | JP2    | Address |
+---------|--------|---------|
+| Closed | Closed | 0x38    |
+| Open   | Closed | 0x39    |
+| Closed | Open   | 0x3A    |
+| Open   | Open   | 0x3B    |
 
+Note that R3 and R4 are needed if JP1 and JP2 are cut, respectively
 
 ## Usage
 To clone this project, follow :
@@ -59,6 +60,7 @@ The sample programs are published as [murasaki_samples_audio](https://github.com
  1. Clone the murasaki_samples_audio repository
  1. Import to CubeIDE
 
+Caution : Because of the height of the capacitor, the stacked Arduino board may contact to the capacitor. 
 
 ## License
 This PCB design is released under the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/). 
