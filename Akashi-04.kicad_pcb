@@ -1206,7 +1206,7 @@
   (gr_line (start 186.055 35.56) (end 186.055 110.49) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 116.205 35.56) (end 186.055 35.56) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 116.205 110.49) (end 116.205 35.56) (layer Edge.Cuts) (width 0.05))
-  (gr_text UMB-ADAU1361-A (at 135.89 66.04 90) (layer F.SilkS)
+  (gr_text UMB-ADAU1361-A (at 135.89 83.82 90) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (dimension 48.26 (width 0.05) (layer F.CrtYd)
