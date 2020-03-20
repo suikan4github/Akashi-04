@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Rename gerber files for Fusion PCB service
+
+# change only file name of the given extention.
+function change_name(){
+	mv `ls *.$1` pcb.$1
+}
+
+# change file name and extention
+function change_name2(){
+	mv `ls *.$1` pcb.$2
+}
+
+change_name drl
+change_name2 gm1 gml
+
+change_name gbl
+change_name gtl
+
+change_name gbs
+change_name gts
+
+change_name gbo
+change_name gto
+

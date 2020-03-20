@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Display_Modules_Local)(type Legacy)(uri Suikan-KiCad-Libraries/Libraries/Display_Modules.lib)(options "")(descr ""))
+  (lib (name Codec_Modules)(type Legacy)(uri ${KIPRJMOD}/Suikan-KiCad-Libraries/Libraries/Codec_Modules.lib)(options "")(descr ""))
+)

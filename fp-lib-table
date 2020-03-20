@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Codec_Modules)(type KiCad)(uri ${KIPRJMOD}/Suikan-KiCad-Libraries/Footprints/Codec_Modules.pretty)(options "")(descr ""))
+)
