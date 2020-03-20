@@ -10,14 +10,14 @@ Record of the modification in project development.
 ### Security
 ### Known Issue
 
-## [1.0.1] - 2020-03-12
+## [1.0.1] - 2020-03-21
 
 ### Added
 ### Changed
 ### Deprecated
 ### Removed
 ### Fixed
-- [Issue 1 : CODEC I2C is not connected.  ](https://github.com/suikan4github/Akashi-01/issues/1)
+- [Issue 1 : CODEC I2C is not connected.  ](https://github.com/suikan4github/Akashi-04/issues/1)
 
 ### Security
 ### Known Issue
@@ -32,6 +32,6 @@ Initial release.
 ### Fixed
 ### Security
 
-[Unreleased]: https://github.com/suikan4github/Akashi-01/compare/v1.0.1...develop
-[1.0.1]: https://github.com/suikan4github/Akashi-01/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/suikan4github/Akashi-01/compare/v0.0.0...v1.0.0
+[Unreleased]: https://github.com/suikan4github/Akashi-04/compare/v1.0.1...develop
+[1.0.1]: https://github.com/suikan4github/Akashi-04/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/suikan4github/Akashi-04/compare/v0.0.0...v1.0.0
